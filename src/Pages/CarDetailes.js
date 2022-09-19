@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components/macro";
 import axios from "axios";
 import { useParams } from "react-router-dom";
