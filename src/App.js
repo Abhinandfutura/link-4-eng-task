@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { lazy } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -7,8 +7,9 @@ import {
 } from "react-router-dom";
 import Header from "./Header/Header";
 import styled from "styled-components";
-const Home = lazy(() => import("../src/Pages/Home"));
-const CarDetailes = lazy(() => import("../src/Pages/CarDetailes"));
+import Home from "./Pages/Home";
+import CarDetails from "./Pages/CarDetailes";
+
 function App() {
   return (
     <div>
@@ -18,7 +19,7 @@ function App() {
         <Routes>
           <Switch>
             <Route path="/" element={<Home />} />
-            <Route path="/car-detailes/:id" element={<CarDetailes />} />
+            <Route path="/car-detailes/:id" element={<CarDetails />} />
           </Switch>
         </Routes>
       </Router>

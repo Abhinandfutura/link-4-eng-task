@@ -115,7 +115,6 @@ function Home() {
 
       // ========================================brand
 
-      console.log("uvaos", updatedList, "======", names);
       if (updatedList.includes(names)) {
         updatedList = updatedList.filter((i) => i != names);
       } else {
